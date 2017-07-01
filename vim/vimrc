@@ -8,7 +8,7 @@ set shiftwidth=4
 set expandtab
 
 " show line number
-set numbers
+set number
 " set width space of line number
 set numberwidth=5
 
