@@ -1,0 +1,14 @@
+" show existing tab with 4 spaces width
+set tabstop=4
+
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+
+" convert tabs to spaces
+set expandtab
+
+" show line number
+set numbers
+" set width space of line number
+set numberwidth=5
+
