@@ -42,3 +42,5 @@ https://github.com/chriskempson/tomorrow-theme
 ## Caffeine
 http://lightheadsw.com/caffeine/
 
+## VIM plugin: Commentary
+https://github.com/tpope/vim-commentary
