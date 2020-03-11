@@ -44,3 +44,7 @@ http://lightheadsw.com/caffeine/
 
 ## VIM plugin: Commentary
 https://github.com/tpope/vim-commentary
+
+## Visual Studio Code
+Fix for repeating key issue: https://stackoverflow.com/questions/39972335/how-do-i-press-and-hold-a-key-and-have-it-repeat-in-vscode 
+
