@@ -158,7 +158,7 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 set spellfile=$HOME/.vim-spell-en.utf-8.add
 
 " Always use vertical diffs
-set diffopt+=vertical
+"set diffopt+=vertical
 
 " vim-airline plugin
 let g:airline#extensions#tabline#enabled = 1
@@ -174,3 +174,18 @@ map <C-n> :NERDTreeToggle<CR>
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+" Set the title of the Terminal to the currently open file
+function! SetTerminalTitle()
+    let titleString = expand('%:t')
+    if len(titleString) > 0
+        let &titlestring = expand('%:t')
+        " this is the format iTerm2 expects when setting the window title
+        let args = "\033];".&titlestring."\007"
+        let cmd = 'silent !echo -e "'.args.'"'
+        execute cmd
+        redraw!
+    endif
+endfunction
+
+autocmd BufEnter * call SetTerminalTitle()
